@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'HelveticaNeueLTPro-BlkCn';
+    font-style: 'normal';
+    font-weight: '700';
+    /* src: url('../vendor/fonts/HelveticaNeueLTPro-Cn.otf');  */
+    src: url('/HelveticaNeueLTPro-BlkCn.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'HelveticaNeueLTPro-BlkCn';
+}
+
+
+
+/* .koho {
+    font-family: 'KoHo', sans-serif;
+    font-weight: 500;
+} */
+
+html {
+    scroll-behavior: smooth;
+    ;
+}
+
+body {
+    background-color: #ffffff !important;
+}
+
+.bg-main {
+    background-color: #ffed00 !important;
+}
+
+.text-main {
+    color: #ffed00 !important;
+}
+
+.bg-mainblue {
+    background-color: #002649 !important;
+}
+
+.text-mainblue {
+    color: #002649 !important;
+}
+
+.image-banner {
+    position: relative;
+    /* text-align: center; */
+    color: white;
+    /* vertical-align: middle; */
+}
+
+.centered {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lefted {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+}
+
+.righted {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+
+}
+
+.bbb {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    /* border-radius: 0.25rem; */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.navbar-head {
+    /* background: transparent;
+    border: none; */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.active a {
+
+    border-bottom: 5px solid #002649 !important
+}
+
+.aaa {
+    color: #ffffff !important;
+}
+
+.active .aaa {
+    color: #ffffff !important;
+    border-bottom: 5px solid #ffffff !important;
+}
+
+
+.big-border {
+    border-top: 50px solid #ffed00 !important;
+    /* border-bottom: 50px solid #ffed00!important */
+}
+
+.owl-item>div {
+    cursor: pointer;
+    margin: 9px 12px;
+    transition: margin 0.4s ease;
+}
+
+.owl-item.center>div {
+    cursor: auto;
+    margin: 0;
+}
+
+
+/*decktop Extra large*/
+@media (min-width: 1200px) {
+    .dacktop-xl-ver {
+        display: none;
+    }
+
+}
+
+/*decktop Large*/
+@media (min-width: 993px) and (max-width: 1199px) {
+    .dacktop-lg-ver {
+        display: none;
+    }
+
+}
+
+/*decktop md*/
+@media (min-width: 769px) and (max-width: 992px) {
+    .dacktop-md-ver {
+        display: none;
+    }
+
+}
+
+/*ipad Medium*/
+@media (min-width: 577px) and (max-width: 768px) {
+    .ipad-ver {
+        display: none;
+    }
+
+
+}
+
+
+/*mobile*/
+@media (min-width: 376px) and (max-width: 576px) {
+    .mobile-ver {
+        display: none;
+    }
+
+}
+
+/*mobile xs*/
+@media (max-width: 375.9px) {
+    .mobile-xs-ver {
+        display: none;
+    }
+
+}
+
+
+.block_title h1 span.title_cover_left:after,
+.block_title h2 span.title_cover_left:after,
+.block_title h3 span.title_cover_left:after,
+.block_title h4 span.title_cover_left:after,
+.block_title h5 span.title_cover_left:after,
+.block_title h6 span.title_cover_left:after {
+    content: '';
+    background-color: #ffed00;
+    height: 100%;
+    width: 150vw;
+    position: absolute;
+    left: 0;
+    transition: left .5s ease-in-out;
+    transition-delay: .5s;
+    will-change: left;
+}
+
+
+.img-scroll {
+    width: 500px;
+    position: absolute;
+    z-index: 1000;
+    left: 500px;
+}
+
+.section {
+    width: 200px;
+    position: relative;
+    z-index: 1000;
+    /* width: 100%; */
+    /* height: 100vh; */
+    overflow: hidden;
+    /* left: 500px; */
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+}
+
+.section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100;
+    transform: scale(6) translate(-50vh);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    /* background-color: #28a92b; */
+    /* position: absolute; */
+    left: 50px;
+    z-index: 100;
+    line-height: 100px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .c {
+    /* top: 1000px; */
+    /* background-color: #e26c16; */
+  }
